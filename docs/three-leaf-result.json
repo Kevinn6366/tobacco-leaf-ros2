@@ -1,0 +1,165 @@
+{
+  "fixture": {
+    "count": 3,
+    "seed": 1,
+    "yaw": 0.0,
+    "tip_height_m": 0.0001,
+    "force_schedule_N": {
+      "tare": 2.5,
+      "initial": 2.5,
+      "gather": 2.5,
+      "hold": 2.5,
+      "open": 5.0
+    },
+    "mechanical_finger_coupling": "q2=q1; native Bullet gear constraint"
+  },
+  "pass_test": true,
+  "control": "predefined fixture coordinates; no perception/model-pose grasp selection",
+  "support": {
+    "grounded": [
+      "leaf_00"
+    ],
+    "supported": [
+      "leaf_00",
+      "leaf_01",
+      "leaf_02"
+    ],
+    "unsupported": [],
+    "pair_surface_gaps_m": {
+      "leaf_00|leaf_01": -4.4910648234336437e-07,
+      "leaf_00|leaf_02": 0.0012551931297828736,
+      "leaf_01|leaf_02": -5.4843151476441365e-05
+    }
+  },
+  "rest": {
+    "min_z_m": {
+      "leaf_00": -5.2476520695466863e-08,
+      "leaf_01": 0.001500000209354084,
+      "leaf_02": 0.0029903815216407487
+    },
+    "max_patch_speed_m_s": 0.0
+  },
+  "ground_contacts": [],
+  "gather": [
+    {
+      "height_m": 0.003,
+      "tip_gap_m": 0.06286197713017463,
+      "contacts": {
+        "right": [
+          "ur::panda_rightfinger::panda_rightfinger_fixed_joint_lump__right_pad_collision | leaf_00::l0_p5::lamina_contact"
+        ],
+        "left": [
+          "ur::panda_leftfinger::panda_leftfinger_fixed_joint_lump__left_pad_collision | leaf_00::l0_p4::lamina_contact"
+        ]
+      }
+    },
+    {
+      "height_m": 0.006,
+      "tip_gap_m": 0.062437491476535795,
+      "contacts": {
+        "right": [
+          "ur::panda_rightfinger::panda_rightfinger_fixed_joint_lump__right_pad_collision | leaf_00::l0_p5::lamina_contact"
+        ],
+        "left": [
+          "ur::panda_leftfinger::panda_leftfinger_fixed_joint_lump__left_pad_collision | leaf_00::l0_p4::lamina_contact"
+        ]
+      }
+    },
+    {
+      "height_m": 0.009,
+      "tip_gap_m": 0.0636070687174797,
+      "contacts": {
+        "right": [
+          "ur::panda_rightfinger::panda_rightfinger_fixed_joint_lump__right_pad_collision | leaf_00::l0_p5::lamina_contact"
+        ],
+        "left": [
+          "ur::panda_leftfinger::panda_leftfinger_fixed_joint_lump__left_pad_collision | leaf_00::l0_p4::lamina_contact"
+        ]
+      }
+    },
+    {
+      "height_m": 0.012,
+      "tip_gap_m": 0.062669040620327,
+      "contacts": {
+        "right": [
+          "ur::panda_rightfinger::panda_rightfinger_fixed_joint_lump__right_pad_collision | leaf_00::l0_p5::lamina_contact"
+        ],
+        "left": [
+          "ur::panda_leftfinger::panda_leftfinger_fixed_joint_lump__left_pad_collision | leaf_00::l0_p4::lamina_contact"
+        ]
+      }
+    }
+  ],
+  "held_contacts": {
+    "right": [
+      "ur::panda_rightfinger::panda_rightfinger_fixed_joint_lump__right_pad_collision | leaf_00::l0_p5::lamina_contact"
+    ],
+    "left": [
+      "ur::panda_leftfinger::panda_leftfinger_fixed_joint_lump__left_pad_collision | leaf_02::l2_p4::lamina_contact"
+    ]
+  },
+  "contact_feedback_fresh": true,
+  "bilateral_pad_contact": true,
+  "held_contact_details": {
+    "left": [
+      {
+        "normals": [
+          [
+            -0.24518263339996338,
+            0.9694769978523254,
+            -1.457884081901284e-06
+          ]
+        ],
+        "depths": [
+          6.078875230741687e-06
+        ]
+      }
+    ],
+    "right": [
+      {
+        "normals": [
+          [
+            0.4159097969532013,
+            -0.8813324570655823,
+            0.2242143750190735
+          ]
+        ],
+        "depths": [
+          1.5543935660389252e-05
+        ]
+      }
+    ]
+  },
+  "opposing_face_contact": true,
+  "wrist_g": 34.29218199919928,
+  "expected_g": 34.292171808927186,
+  "held_min_z_m": {
+    "leaf_00": 0.37437666666825253,
+    "leaf_01": 0.39086930136900744,
+    "leaf_02": 0.42113660501779304
+  },
+  "held_max_penetration_m": 1.5543935660389252e-05,
+  "scale_gain_g": 34.281331362744446,
+  "residual_wrist_g": 0.0007127468683281723,
+  "box_relative_centers": {
+    "leaf_00": [
+      -0.01944867390006444,
+      0.09478333951664356,
+      0.013413025069398187
+    ],
+    "leaf_01": [
+      -0.013732035276303345,
+      0.0835125462419217,
+      0.021846371641510265
+    ],
+    "leaf_02": [
+      -0.015265072567643534,
+      0.08092116180233686,
+      0.027165521020890503
+    ]
+  },
+  "contacts_after": {
+    "right": [],
+    "left": []
+  }
+}

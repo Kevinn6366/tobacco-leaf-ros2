@@ -1,0 +1,24 @@
+{
+  "width": 640,
+  "height": 480,
+  "fps": 4,
+  "fx": 554.2562584220408,
+  "fy": 554.2562584220408,
+  "cx": 319.5,
+  "cy": 239.5,
+  "hand_xyz": [
+    -0.075,
+    0,
+    0.035
+  ],
+  "hand_rpy": [
+    0,
+    -0.9707963267948966,
+    0
+  ],
+  "belt_z": 0.0,
+  "ground_z": 0.0,
+  "baseline_m": 0.06,
+  "depth_source": "stereo RGB disparity",
+  "calibration": "ideal simulator intrinsics and rigid extrinsics"
+}
